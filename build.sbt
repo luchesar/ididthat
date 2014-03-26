@@ -46,9 +46,15 @@ libraryDependencies ++= {
     "org.mockito"               %   "mockito-all"          % mockitoV    % "test",
     "org.easytesting"           %   "fest-assert"          % festAssertV % "test",
     "com.google.guava"          %   "guava"                % guavaV      % "test",
+<<<<<<< HEAD
+    "com.btmatthews.ldapunit"   %   "ldapunit"             % "1.0.2"     % "test",
+    "junit"                     %   "junit"                % "4.11"      % "test",
+    "com.github.athieriot"      %%  "specs2-embedmongo"    % embedMongoV % "test" exclude("com.chuusai", "shapeless_2.10.2")
+=======
     "com.github.simplyscala"    %% "scalatest-embedmongo"  % "0.2.1" % "test"
 //    "de.flapdoodle.embed"       %   "de.flapdoodle.embed.mongo" % "1.42",
 //    "org.mongodb"               %   "mongo-java-driver"         % "2.11.4"
+>>>>>>> 4af4e62beba512d08d29babbda0ecd173694c6ab
   )
 }
 

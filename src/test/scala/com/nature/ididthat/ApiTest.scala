@@ -43,12 +43,22 @@ class ApiTest
       assertThat(response.encoding).isEqualTo(HttpEncodings.identity)
       assertThat(mediaType).isEqualTo(`application/json`)
       assertThat(charset).isEqualTo(`UTF-8`)
+<<<<<<< HEAD
+      assertThat(responseAs[User]).isEqualTo(user)
+      header[`Set-Cookie`] === Some(`Set-Cookie`(
+        HttpCookie(Api.CookieName,
+          content = "user1",
+          secure = true)
+//          expires = Some(e))
+      ))
+=======
       assertThat(responseAs[User]).isEqualTo(user1)
 
       val Some(`Set-Cookie`(c)) = header[`Set-Cookie`]
       assertThat(c.name).isEqualTo(Cookie.UserName)
       assertThat(c.secure).isEqualTo(true)
       assertThat(c.content).isEqualTo("user1")
+>>>>>>> 4af4e62beba512d08d29babbda0ecd173694c6ab
     }
   }
 

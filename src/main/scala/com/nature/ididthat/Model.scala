@@ -7,6 +7,8 @@ case class User(id: String,
                 email: String,
                 roles: Set[String])
 
+<<<<<<< HEAD
+=======
 case class Permission(id: String)
 //
 //object Permission extends Enumeration {
@@ -15,6 +17,7 @@ case class Permission(id: String)
 //}
 
 //case class Role(id: String, permissions: Set[Permission.Value])
+>>>>>>> 4af4e62beba512d08d29babbda0ecd173694c6ab
 case class Role(id: String, permissions: Set[String])
 
 case class Task(id: String, date: Long, user: String, work: String)    //TODO: change this date into some Date. We need an implicit converter to JSON
